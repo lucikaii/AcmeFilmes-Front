@@ -1,0 +1,36 @@
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--black);
+    font-family: var(--main-font);
+}
+header{
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+}
+main{
+    padding-top: 80px;
+    display: grid;
+    justify-content: center;
+}
+form{
+    display: grid;
+    gap: 65px;
+    padding-bottom: 90px;
+}
+.signup{
+    display: flex;
+    padding-top: 30px;
+    gap: 5px;
+    justify-self: center;
+}
+h1{
+    font-size: 24px;
+    color: var(--white);
+    font-weight: lighter;
+}
+span{
+    font-size: 24px;
+    color:  var(--main-purple);
+}

@@ -1,0 +1,31 @@
+.form{
+    display: grid;
+    gap: 5px;
+}
+.input-side{
+    display: flex;
+    gap: 20px;
+}
+.form-icon{
+    height: 16px;
+    width: 16px;
+}
+input{
+    outline: none;
+    background-color: transparent;
+    border: none;
+    width: 95%;
+    color: var(--white);
+    font-family: var(--main-font);
+    font-weight: lighter;
+}
+input::placeholder{
+    color: var(--white);
+    font-family: var(--main-font);
+    font-weight: lighter;
+}
+.line{
+    height: 1px;
+    width: 500px;
+    background-color: var(--white);
+}
