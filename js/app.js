@@ -1,4 +1,4 @@
-import {getMovie, getMovies} from './films.js'
+import {getMovie, getMovies, postMovie} from './films.js'
 
 function criarCard(filme){
 
@@ -28,3 +28,16 @@ async function preencherContainer(){
    })
 }
 
+// Teste
+
+const filme = {
+    "nome": "Elementos",
+    "sinopse": "Em uma cidade onde os habitantes de fogo, água, terra e ar convivem, uma jovem mulher flamejante e um rapaz que vive seguindo o fluxo descobrem algo surpreendente, porém elementar: o quanto eles têm em comum.",
+    "duracao": "01:42:00",
+    "data_lancamento": "2023-06-15",
+    "data_relancamento": null,
+    "foto_capa": "https://lumiere-a.akamaihd.net/v1/images/elemental_bport_765442cf.png",
+    "valor_unitario": 29 
+}
+
+console.log(await postMovie(filme))

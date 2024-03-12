@@ -14,3 +14,14 @@ export async function getMovie (id){
     return data.filme
 
 }
+
+export async function postMovie (movie){
+    const url = `http://10.107.134.43:8080/v2/acmefilmes/filme`
+    const options = {
+        method: 'POST',
+        body: JSON.stringify(movie)
+    }
+   const response = await fetch(url, options)
+
+   return response.ok
+}
