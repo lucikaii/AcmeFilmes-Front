@@ -52,26 +52,22 @@ main{
     padding-top: 20px;
     display: grid;
 }
-.preview{
-    height: 750px;
-    width: 95%;
-    background-image: url(../img/elementos.webp);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    justify-self: center;
-    border-radius: 30px;
-    padding: 15px 30px 15px 30px;
-    display: grid;
-    align-items: end;
+.swiper{
+    height: 850px;
+    width: 90%;
 }
-.movies{
+.swiper-slide{
+    display: block;
     width: 100%;
-    padding: 20px;
+    height: 100%;
+    object-fit: cover;
 }
-h1{
-    color: white;
+.swiper-slide:nth-child(1n){
+    background: url(../img/elementos.webp);
+    background-repeat: no-repeat;
 }
-.slidemovie{
-    display: flex;
+.swiper-slide:nth-child(2n){
+    background: url(../img/todos-menos-voce.webp);
+    background-repeat: no-repeat;
 }
+

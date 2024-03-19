@@ -25,3 +25,26 @@ export async function postMovie (movie){
 
    return response.ok
 }
+
+export async function putMovie (movie){
+    const url = `http://10.107.134.43:8080/v2/acmefilmes/filme/${movie.id}`
+    const options = {
+        method: 'PUT',
+        headers: {
+            'Content-Type':'application/json'
+        },
+        body: JSON.stringify(movie)
+    }
+   const response = await fetch(url, options)
+
+   return response.ok
+}
+export async function deleteMovie (id){
+    const url = `http://10.107.134.43:8080/v2/acmefilmes/filme/${id}`
+    const options = {
+        method: 'DELETE',
+    }
+   const response = await fetch(url, options)
+
+   return response.ok
+}

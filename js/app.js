@@ -31,6 +31,7 @@ async function preencherContainer(){
 // Teste
 
 const filme = {
+    "id": 12,
     "nome": "Elementos",
     "sinopse": "Em uma cidade onde os habitantes de fogo, água, terra e ar convivem, uma jovem mulher flamejante e um rapaz que vive seguindo o fluxo descobrem algo surpreendente, porém elementar: o quanto eles têm em comum.",
     "duracao": "01:42:00",
