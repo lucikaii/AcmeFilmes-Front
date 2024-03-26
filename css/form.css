@@ -1,14 +1,16 @@
-.form{
-    display: grid;
-    gap: 5px;
-}
 .input-side{
     display: flex;
-    gap: 20px;
+    height: 50px;
+    width: 600px;
+    border: 2px solid var(--main-purple);
+    border-radius: 8px;
+    padding-left: 5px;
+    justify-content: space-between;
 }
 .form-icon{
     height: 16px;
     width: 16px;
+    align-self: center;
 }
 input{
     outline: none;

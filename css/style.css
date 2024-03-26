@@ -10,11 +10,13 @@ header{
     justify-content: center;
 }
 main{
+    width: 100%;
     padding-top: 80px;
     display: grid;
     justify-content: center;
 }
 form{
+    width: 100%;
     display: grid;
     gap: 65px;
     padding-bottom: 90px;

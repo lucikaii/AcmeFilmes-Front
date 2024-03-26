@@ -14,6 +14,9 @@ export async function getMovie (id){
     return data.filme
 
 }
+export async function getMovieByName(movieName){
+
+}
 
 export async function postMovie (movie){
     const url = `http://10.107.134.43:8080/v2/acmefilmes/filme`

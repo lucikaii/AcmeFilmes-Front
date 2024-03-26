@@ -43,3 +43,13 @@ input{
     border-radius: 50%;
     justify-self: end;
 }
+main{
+    width: 100%;
+    display: grid;
+}
+section{
+    padding-left: 70px;
+    padding-right: 70px;
+    display: flex;
+    justify-content: space-between;
+}
