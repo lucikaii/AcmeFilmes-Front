@@ -1,0 +1,99 @@
+header{
+    width: 100%;
+    padding: 20px;
+    display: grid;
+}
+.nav-island{
+    height: 60px;
+    width: 60%;
+    background-color: var(--black);
+    border-radius: 16px;
+    position: fixed;
+    z-index: 1;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    justify-content: space-between;
+}
+.logo{
+    height: 40px;
+}
+h1{
+    font-size: 24px;
+    color: var(--white);
+    font-family: var(--main-font);
+}
+h1:hover{
+    background: var(--white);
+    color: var(--black);
+}
+.search{
+    height: 30px;
+    width: 30px;
+}
+.profile-photo{
+    height: 40px;
+    width: 40px;
+    background-color: blueviolet;
+    border-radius: 50%;
+}
+li{
+    display: block;
+    position: relative;
+}
+li a{
+    display: block;
+    color: var(--white);
+    padding: 15px 20px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 24px;
+    font-family: var(--main-font);
+}
+li a:hover{
+    background: var(--white);
+    color: var(--black);
+}
+li ul.dropdown li{
+    display: block;
+}
+li ul.dropdown{
+    width: 100%;
+    background: var(--black);
+    position: absolute;
+    z-index: 999;
+    display: none;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    overflow: hidden;
+}
+li:hover ul.dropdown{
+    display: block;
+}
+li i{
+}
+li ul.dropdown-input{
+    width: 100%;
+    background: var(--black);
+    position: absolute;
+    z-index: 999;
+    display: none;
+}
+li:hover ul.dropdown-input{
+    display: block;
+}
+.input-side{
+    display: grid;
+}
+.search-input{
+    height: 50px;
+    width: 100%s;
+    border: 2px solid var(--main-purple);
+    outline: 0;
+    background: var(--black);
+    color: var(--white);
+    border-radius: 10px;
+    padding-left: 10px;
+}

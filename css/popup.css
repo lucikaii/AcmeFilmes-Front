@@ -1,6 +1,6 @@
 .popup{
     position: fixed;
-    z-index: 1;
+    z-index: 2;
     left: 0;
     top: 0;
     width: 100%;
@@ -10,10 +10,41 @@
     display: none;
 }
 .popup-box{
+    height: 100%;
+    width: 100%;
+    display: grid;
+}
+.popup-content{
     height: 60%;
-    width: 62.5%;
-    background-color: var(--main-purple);
-    border-radius: 16px;
+    width: 55%;
+    background-color: var(--black);
+    padding: 30px;
+    border-radius: 8px;
     justify-self: center;
     align-self: center;
+    display: flex;
+}
+.show {
+    display: block;
+}
+.synopsis{
+    height: 100%;
+    width: 60%;
+}
+.movie-title{
+    font-family: var(--main-font);
+    font-size: 32px;
+    font-weight: bold;
+    color: var(--white);
+    align-self: center;
+}
+.movie-text{
+    font-family: var(--main-font);
+    font-size: 16px;
+    font-weight: lighter;
+    color: var(--white);
+}
+.info{
+    height: 100%;
+    width: 40%;
 }

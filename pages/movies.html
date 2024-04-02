@@ -1,39 +1,80 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/root.css">
     <link rel="stylesheet" href="../css/movies.css">
     <link rel="stylesheet" href="../css/popup.css">
-    <script src="../js/popup.js" defer></script>
+    <link rel="stylesheet" href="../css/header.css">
+    <script type="module" src="../js/films.js" defer></script>
+    <script type="module" src="../js/movies.js" defer></script>
+    <!-- <script type="module" src="../js/popup.js" defer></script> -->
     <title>Acme Filmes | Movies</title>
 </head>
 <body>
     <header>
-        <img src="../img/logo.png" alt="logo">
-            <div class="input">
-                <input type="text">
-            <img src="../img/pesquisar.png" alt="pesquisar" class="icon">
-            </div>
-            <div class="profile-photo">
-            </div>
-    </header>
-    <main>
-        <section>
-            <img src="../img/truebeauty.png" alt="pic" id="addButton">
-            <img src="../img/elementos.webp" alt="pic">
-            <img src="../img/strongwoman.png" alt="pic">
-            <img src="../img/20century.png" alt="pic">
-            <img src="../img/ponyosakana.webp" alt="pic">
-        </section>
+        <div class="nav-island">
+            <img src="../img/logo.png" alt="logo" class="logo">
 
+            <li>
+                <a href="./movies.html"> Filmes </a>
+            </li>
+
+            <li>
+                <a href="#"> Classificação </a>
+            </li>
+
+            <li>
+                <a href="#"> Categorias </a>
+                <ul class="dropdown">
+                    <li><a href="#">Romance</a></li>
+                    <li><a href="#">Drama</a></li>
+                    <li><a href="#">Suspense</a></li>
+                    <li><a href="#">Romance</a></li>
+                    <li><a href="#">Drama</a></li>
+                    <li><a href="#">Suspense</a></li>
+                    <li><a href="#">Romance</a></li>
+                    <li><a href="#">Drama</a></li>
+                    <li><a href="#">Suspense</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="#"> +Informações </a>
+                <ul class="dropdown">
+                    <li><a href="#">Atores</a></li>
+                    <li><a href="#">Diretores</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="#"><i class="bi bi-search"></i></a>
+            </li>
+
+            <div class="profile-photo"></div>
+        </div>
+    </header>
+    <main id="main">
+  
         <div class="popup" id="popup">
-            <div class="popup-box"></div>
+            <div class="popup-box">
+                <div class="popup-content">
+                    <div class="synopsis">
+                        <h1 class="movie-title">Garota do Século 20</h1>
+                        <p class="movie-text">Em 1999, uma adolescente monitora atentamente o garoto pelo qual a melhor amiga está apaixonada. Tudo vai bem até que um outro amor começa a dar as caras.</p>
+                    </div>
+
+                    <div class="info">
+                        <img src="../img/20century.png" alt="lol" >
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
 </body>

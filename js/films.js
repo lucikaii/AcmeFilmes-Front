@@ -1,6 +1,6 @@
 export async function getMovies(){
     
-    const url = 'http://10.107.134.43:8080/v2/acme/filmes'
+    const url = 'https://acmefilmes-zhei.onrender.com/v1/acmefilmes/filmes'
     const response = await fetch(url)
     const data = await response.json()
     return data.filmes
