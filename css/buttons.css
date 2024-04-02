@@ -24,3 +24,11 @@
     transform: scale(1.1);
     transition: 1s ease;
 }
+.closepopup-button{
+    height: 30px;
+    width: 30px;
+    border: none;
+    background-color: var(--main-purple);
+    color: var(--white);
+    border-radius: 50%;
+}

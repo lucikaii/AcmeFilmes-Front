@@ -18,7 +18,7 @@
     height: 60%;
     width: 55%;
     background-color: var(--black);
-    padding: 30px;
+    padding: 25px;
     border-radius: 8px;
     justify-self: center;
     align-self: center;
@@ -47,4 +47,23 @@
 .info{
     height: 100%;
     width: 40%;
+}
+.row-info{
+    display: flex;
+    padding-top: 5px;
+    padding-left: 25px;
+    align-items: center;
+    gap: 20px;
+}
+.cfs{
+    height: 20px;
+    width: 20px;
+    background-color: blue;
+    border-radius: 8px;
+}
+span{
+    color: var(--white);
+    font-size: 16px;
+    font-weight: bold;
+    font-family: var(--main-font);
 }
