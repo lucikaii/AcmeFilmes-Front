@@ -1,0 +1,132 @@
+body{
+    height: 100vh;
+    width: 100vw;
+    background: var(--black);
+    overflow-x: hidden;
+}
+header{
+    height: 100px;
+    width: 100%;
+    padding: 30px;
+    z-index: 1;
+    position: fixed;
+    display: flex;
+    background: var(--black);
+}
+.profile{
+    display: flex;
+    gap: 20px;
+}
+.photo{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+.welcome{
+    display: grid;
+    font-family: var(--main-font);
+}
+h1{
+    font-size: 20px;
+    color: var(--white);
+    font-weight: 400;
+}
+.name{
+    font-size: 20px;
+    color: var(--main-purple);
+}
+.ul{
+    display: flex;
+}
+.search{
+    height: 40px;
+    width: 550px;
+    border: 2px solid var(--main-purple);
+    border-radius: 16px;
+    color: var(--white);
+    display: flex;
+    padding-left: 10px;
+    padding-right: 10px;
+    align-items: center;
+    gap: 5px;
+}
+.search-input{
+    width: 95%;
+    border: 0;
+    outline: 0;
+    color: var(--white);
+    background: transparent;
+}
+.search-button{
+    cursor: pointer;
+}
+main{
+    width: 100%;
+    padding-top: 130px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+.card{
+    border: 2px solid #9D4EDD;
+    border-radius: 16px;
+    background-color: transparent;
+    width: 1242px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 25px;
+}
+.filme{
+    display:  flex;
+    align-items: center;
+    gap: 50px;
+}
+.foto_capa{
+    background-image: url(https://uploads.metropoles.com/wp-content/uploads/2019/04/03170659/Heath-Ledger-Coringa-RED.jpg);
+    width: 70px;
+    height: 40px;
+    border-radius: 8px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.nome{
+    color: var(--white);
+    font-family: var(--main-font);
+    font-size: 24px;
+}
+.botoes{
+    display: flex;
+    gap: 20px;
+}
+.edit-button{
+    height: 40px;
+    width: 40px;
+    font-size: 20px;
+    border: 0;
+    border-radius: 8px;
+    color: var(--green);
+    background: transparent;
+    border: 2px solid var(--green);
+}
+.edit-button:hover{
+        background: var(--green);
+        color: var(--white);
+}
+.delete-button{
+    height: 40px;
+    width: 40px;
+    font-size: 20px;
+    border: 0;
+    border-radius: 8px;
+    color: var(--red);
+    background: transparent;
+    border: 2px solid var(--red);
+}
+.delete-button:hover{
+    background: var(--red);
+    color: var(--white);
+}

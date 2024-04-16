@@ -3,7 +3,7 @@ export async function getMovies(){
     const url = 'https://acmefilmes-zhei.onrender.com/v1/acmefilmes/filmes'
     const response = await fetch(url)
     const data = await response.json()
-    return data.filmes
+    return data
 }
 
 export async function getMovie (id){
