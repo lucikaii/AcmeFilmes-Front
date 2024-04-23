@@ -7,7 +7,6 @@
     height: 100%;
     overflow: hidden;
     background-color: rgba(0, 0, 0, 0.705);
-    display: none;
 }
 .popup-box{
     height: 100%;
@@ -66,4 +65,44 @@ span{
     font-size: 16px;
     font-weight: bold;
     font-family: var(--main-font);
+}
+.popup-content-edit{
+    height: 75%;
+    width: 85%;
+    background-color: var(--black);
+    padding: 30px;
+    border-radius: 8px;
+    justify-self: center;
+    align-self: center;
+    display: flex;
+}
+.input-side{
+    display: grid;
+}
+.text{
+    height: 40px;
+    width: 600px;
+    border: 2px solid var(--main-purple);
+    outline: 0;
+    background: transparent;
+    font-size: 24px;
+    color: var(--white);
+    font-family: var(--main-font);
+    border-radius: 16px;
+    padding-left: 25px;
+}
+.date{
+    height: 40px;
+    width: 600px;
+    border: 2px solid var(--main-purple);
+    outline: 0;
+    font-size: 24px;
+    font-family: var(--main-font);
+    border-radius: 16px;
+    padding-inline: 25px;
+}
+.movie-photo{
+    height: 170px;
+    width: 300px;
+    border-radius: 8px;
 }
