@@ -7,7 +7,11 @@ body{
 }
 main{
     width: 100%;
-    display: grid;
+    padding: 20px;
+    display: inline;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
 }
 section{
     padding-top: 80px;
@@ -16,13 +20,13 @@ section{
     display: flex;
     justify-content: space-between;
 }
-section .movie{
+.movie{
     height: 170px;
     width: 300px;
     border-radius: 30px;
     cursor: pointer;
 }
-section .movie:hover{
+.movie:hover{
     transform: scale(1.1);
     transition: 0.4s ease;
 }

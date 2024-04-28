@@ -13,3 +13,7 @@ window.addEventListener('click', function (event) {
         myPopup.classList.remove("show");
     }
 });
+
+async function showPopup(){
+}
+

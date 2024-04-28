@@ -2,29 +2,27 @@ import { getMovies } from './films.js'
 
 
 document.addEventListener('DOMContentLoaded', function() {
-    const container = document.getElementById('main');
+    const container = document.getElementById('main')
 
-    preencherCard(container);
-});
+    preencherCard(container)
+})
 
-function criarCard(){
 
-    const card = document.createElement('div')
-    card.classList.add('movie')
-    card.id = 'addButton'
-
-    return card
-}
-
-async function preencherCard(card){
+async function preencherCard(container){
 
     const movies = await getMovies()
 
-
     movies.filmes.forEach( movie => {
         
-        card.style.backgroundImage = `url(${movie.foto_capa})`
+        let card = document.createElement('img')
+        card.classList.add('movie')
+        card.setAttribute('id', 'addButton')
+        card.src = `${movie.foto_capa}`
+        card.alt = `${movie.nome}`
+
         container.appendChild(card)
     });
+
 } 
+
 
