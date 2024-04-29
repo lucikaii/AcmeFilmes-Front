@@ -72,28 +72,36 @@ li ul.dropdown{
 li:hover ul.dropdown{
     display: block;
 }
-li i{
+.classificacao-area{
+    display: flex;
 }
-li ul.dropdown-input{
-    width: 100%;
-    background: var(--black);
-    position: absolute;
-    z-index: 999;
-    display: none;
+.classificacao-icon{
+    height: 24px;
+    width: 24px;
+    border-radius: 4px;
 }
-li:hover ul.dropdown-input{
-    display: block;
+p{
+    padding-left: 1px;
+    font-size: 10px;
 }
-.input-side{
-    display: grid;
-}
-.search-input{
-    height: 50px;
-    width: 100%s;
+.input-area{
+    height: 30px;
+    width: 250px;
     border: 2px solid var(--main-purple);
-    outline: 0;
-    background: var(--black);
+    border-radius: 8px;
+    padding-right: 5px;
+    overflow: hidden;
+}
+input{
+    height: 100%;
+    width: 90%;
+    border: 0;
+    outline: none;
+    background: transparent;
+    padding-left: 5px;
     color: var(--white);
-    border-radius: 10px;
-    padding-left: 10px;
+    font-family: var(--main-font);
+}
+.bi-search{
+    cursor: pointer;
 }

@@ -16,6 +16,7 @@
     <script type="module" src="../js/films.js" defer></script>
     <script type="module" src="../js/movies.js" defer></script>
     <script type="module" src="../js/popup.js" defer></script>
+    <script type="module" src="../js/header.js"></script>
     <title>Acme Filmes | Movies</title>
 </head>
 <body>
@@ -27,8 +28,11 @@
                 <a href="./movies.html"> Filmes </a>
             </li>
 
-            <li>
+            <li id="classification-list">
                 <a href="#"> Classificação </a>
+                <ul class="dropdown">
+                    <li><a href="#" class="classificacao-area"><img src="https://img.odcdn.com.br/wp-content/uploads/2022/02/L-AUTO.jpg" alt="l" class="classificacao-icon"><p>Não Recomendado para menores de 10 anos</p></a></li>
+                </ul>
             </li>
 
             <li>
@@ -54,9 +58,10 @@
                 </ul>
             </li>
 
-            <li>
-                <a href="#"><i class="bi bi-search"></i></a>
-            </li>
+            <div class="input-area">
+                <input type="text" id="search">
+                <i class="bi bi-search" id="search-button"></i>
+            </div>
 
             <div class="profile-photo"></div>
         </div>

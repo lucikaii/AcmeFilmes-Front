@@ -16,6 +16,10 @@ export async function getMovie (id){
 }
 export async function getMovieByName(movieName){
 
+    const url = `https://acmefilmes-zhei.onrender.com/v1/acmefilmes/filtro/filme?nome=${movieName}`
+    const response = await fetch(url)
+    const data = await response.json()
+    return data
 }
 
 export async function postMovie (movie){
