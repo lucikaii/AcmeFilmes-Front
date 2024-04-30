@@ -7,18 +7,10 @@ body{
 }
 main{
     width: 100%;
-    padding: 20px;
     display: inline;
-    flex-wrap: wrap;
+    display:inline-block;
     flex-direction: row;
-    justify-content: space-between;
-}
-section{
-    padding-top: 80px;
-    padding-left: 70px;
-    padding-right: 70px;
-    display: flex;
-    justify-content: space-between;
+    gap: 10px;
 }
 .movie{
     height: 170px;

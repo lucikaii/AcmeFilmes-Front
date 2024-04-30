@@ -1,4 +1,5 @@
-import { getMovies, getMovieByName } from './films.js'
+import { getMovies, getMovieByName, getMovie } from './films.js'
+import { showPopupMovie } from './popup.js'
 
 
 const search = document.getElementById('search').value
@@ -19,11 +20,19 @@ async function preencherCard(container){
         
         let card = document.createElement('img')
         card.classList.add('movie')
-        card.setAttribute('id', 'addButton')
         card.src = `${movie.foto_capa}`
         card.alt = `${movie.nome}`
+        let idFilme = movie.idFilme
 
         container.appendChild(card)
+
+        card.addEventListener('click', async () => {
+            
+            let movie = await getMovie(idFilme)
+
+            showPopupMovie(movie)
+        })
+          
     });
 
 } 
